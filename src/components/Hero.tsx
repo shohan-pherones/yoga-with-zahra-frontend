@@ -94,7 +94,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="h-[calc(100vh-5rem)] relative overflow-hidden">
+    <div className="h-[calc(100vh-5rem)] fixed inset-0 overflow-hidden top-20">
       <Suspense fallback={<Loading />}>
         <video
           autoPlay

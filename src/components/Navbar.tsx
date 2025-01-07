@@ -27,6 +27,9 @@ const Navbar = () => {
       <Link href="/#stories" className="nav_link_hover">
         Stories
       </Link>
+      <Link href="/classes" className="btn">
+        Book a class
+      </Link>
     </>
   );
 
@@ -38,15 +41,7 @@ const Navbar = () => {
             YWZ
           </Link>
           <nav className="hidden md:block">
-            <ul className="flex items-center gap-5">
-              {navLinks}
-              <Link
-                href="/classes"
-                className="border px-5 py-2.5 bg-gray hover:bg-crimson hover:text-white transition duration-300 ease-in-out"
-              >
-                Book a class
-              </Link>
-            </ul>
+            <ul className="flex items-center gap-5">{navLinks}</ul>
           </nav>
           <button
             onClick={() => setShouldMobileNavOpen(!shouldMobileNavOpen)}
@@ -84,12 +79,6 @@ const Navbar = () => {
             className="fixed z-[99] top-20 left-0 bottom-0 right-0 bg-gray h-[calc(100vh-5rem)] flex flex-col items-center justify-center gap-5 md:hidden"
           >
             {navLinks}
-            <Link
-              href="/classes"
-              className="border px-5 py-2.5 bg-gray hover:bg-crimson hover:text-white transition duration-300 ease-in-out"
-            >
-              Book a class
-            </Link>
           </motion.nav>
         )}
       </AnimatePresence>

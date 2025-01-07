@@ -14,4 +14,8 @@
   .nav_link_hover:hover::after {
     @apply w-full;
   }
+
+  .btn {
+    @apply border px-5 py-2.5 bg-gray hover:bg-crimson hover:text-white transition duration-300 ease-in-out;
+  }
 }
